@@ -1,0 +1,40 @@
+{
+  "name": "adost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "./startTest.sh",
+    "docs": "jsdoc2md --template README.hbs -f ./lib/* -f ./lib/postgres/* > README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phara0h/adost.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phara0h/adost/issues"
+  },
+  "homepage": "https://github.com/phara0h/adost#readme",
+  "dependencies": {
+    "pg": "7.18.2",
+    "pg-native": "3.0.0",
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "@abeai/recho": "^1.4.0",
+    "cli-table": "^0.3.1",
+    "colors": "^1.4.0",
+    "dotenv": "4.0.0",
+    "eslint": "6.5.1",
+    "eslint-plugin-security": "1.4.0",
+    "gulp": "3.9.1",
+    "jest": "^24.8.0",
+    "lodash": "^4.17.15",
+    "request-promise": "^4.2.5"
+  }
+}
