@@ -1,13 +1,14 @@
 {
   "name": "adost",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "A fast postgres CRUD ORM",
+  "keywords":["adost","postgres","orm","fast","crud"],
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "./startTest.sh",
+    "test": "jest --coverage --verbose",
     "docs": "jsdoc2md --template README.hbs -f ./lib/* -f ./lib/postgres/* > README.md"
   },
   "repository": {

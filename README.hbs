@@ -1,5 +1,7 @@
 # Adost
 
+A fast postgres CRUD ORM
+
 ## Documentation
 
 Original base work was a forked from [@abeai/node-utils](https://github.com/abeai/node-utils)

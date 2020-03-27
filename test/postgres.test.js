@@ -1,18 +1,12 @@
 
 describe('Postgres', () => {
 
-    var PGConnecter = require('..').PGConnecter;
+    var PGConnecter = require('../').PGConnecter;
     var pgOptions = {
         pg: {
             connectionString: 'postgres://postgres@localhost/pgtest',
         }
     };
-
-    try {
-        pgOptions.crypto = require('@abeai/node-crypto').utils.pgCrypto;
-    } catch (_) {
-        console.log(_);
-    }
 
     var pg = new PGConnecter(pgOptions);
 
@@ -581,7 +575,7 @@ describe('Postgres', () => {
                 });
 
                 test('Redact user 2 [redactSensitiveDataSymbol()]', async ()=>{
-                    const redactSensitiveDataSymbol = require('..').redaction.redactSensitiveDataSymbol;
+                    const redactSensitiveDataSymbol = require('../lib/redaction.js').redactSensitiveDataSymbol;
 
                     user2[redactSensitiveDataSymbol]();
 

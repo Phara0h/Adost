@@ -1,8 +1,8 @@
 'use strict';
 
-const BaseModel = require('../../../../lib/postgres/PGBaseModel.js');
-const Base = require('../../../../lib/postgres/Base.js');
-const PGTypes = require('../../../../lib/postgres/PGTypes.js');
+const BaseModel = require('../../../../lib/PGBaseModel.js');
+const Base = require('../../../../lib/Base.js');
+const PGTypes = require('../../../../lib/PGTypes.js');
 
 class User extends Base(BaseModel, 'users', {
     id: PGTypes.PK,
