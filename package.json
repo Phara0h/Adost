@@ -2,7 +2,13 @@
   "name": "adost",
   "version": "1.0.1",
   "description": "A fast postgres CRUD ORM",
-  "keywords":["adost","postgres","orm","fast","crud"],
+  "keywords": [
+    "adost",
+    "postgres",
+    "orm",
+    "fast",
+    "crud"
+  ],
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -35,7 +41,7 @@
     "eslint-plugin-security": "1.4.0",
     "gulp": "3.9.1",
     "jest": "^24.8.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "request-promise": "^4.2.5"
   }
 }

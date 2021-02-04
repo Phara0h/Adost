@@ -525,6 +525,18 @@ describe('Postgres', () => {
 
                     expect(fUser[0].username).toBe('user2');
                 });
+
+                test('Find all by multiple properties query static array[findAllBy()]', async ()=>{
+                    var fUser = await UserAD.findAllBy(
+                        [{
+                            username: ['user2', 'OR', 'user3']
+
+                        },{
+                          email: null
+                        }], ['AND', 'AND']);
+
+                    expect(fUser[0].username).toBe('user2');
+                });
             });
 
             describe('Update', () => {
