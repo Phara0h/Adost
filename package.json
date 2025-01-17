@@ -1,6 +1,6 @@
 {
   "name": "adost",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A fast postgres CRUD ORM",
   "keywords": [
     "adost",
